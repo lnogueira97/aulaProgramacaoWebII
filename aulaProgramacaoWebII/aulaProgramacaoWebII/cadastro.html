@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cadastro — Amigos do Bem</title>
+<meta name="description" content="Cadastre-se como voluntário ou doador na ONG Exemplo.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+<header class="site-header">
+<div class="container">
+<a class="brand" href="index.html">Amigos do Bem</a>
+</div>
+</header>
+
+
+<main id="main" class="container" role="main">
+<h1>Cadastro</h1>
+<p>Preencha os dados abaixo para se tornar voluntário ou apoiador.</p>
+
+
+<form id="cadastro-form" action="#" method="post" novalidate>
+<fieldset>
+<legend>Dados pessoais</legend>
+<div class="grid">
+<label for="nome">Nome completo</label>
+<input id="nome" name="nome" type="text" required minlength="3" aria-required="true">
+
+
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email" required aria-required="true">
+
+
+<label for="cpf">CPF</label>
+<input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+
+
+<label for="telefone">Telefone</label>
+<input id="telefone" name="telefone" type="tel" inputmode="tel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(11) 9xxxx-xxxx" required>
+
+
+<label for="nascimento">Data de Nascimento</label>
+<input id="nascimento" name="nascimento" type="date" max="2008-12-31" required>
+</div>
+</fieldset>
+
+
+<fieldset>
+<legend>Endereço</legend>
+<div class="grid">
+<label for="cep">CEP</label>
+<input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000" required>
+
+
+<label for="endereco">Endereço</label>
+<input id="endereco" name="endereco" type="text" required>
+
+
+<label for="cidade">Cidade</label>
+<input id="cidade" name="cidade" type="text" required>
+
+
+<label for="estado">Estado</label>
+<select id="estado" name="estado" required>
+<option value="">Selecione...</option>
+<option value="SP">SP</option>
+<option value="RJ">RJ</option>
+<option value="MG">MG</option>
+<!-- adicionar demais estados -->
+</select>
+<label><input type="checkbox" name="interesse" value="news
