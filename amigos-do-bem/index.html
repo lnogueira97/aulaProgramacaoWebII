@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Amigos do Bem — Transformando comunidades</title>
+  <meta name="description" content="Amigos do Bem: fortalecendo comunidades em situação de vulnerabilidade através de educação, saúde e solidariedade.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="Amigos do Bem - Página inicial"><img src="assets/images/logo.svg" alt="Amigos do Bem - logo"></a>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="menu-list">☰</button>
+        <ul id="menu-list" class="menu-list" aria-hidden="true">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="hero" role="main">
+    <div class="container hero-grid">
+      <section class="col">
+        <h1 class="h-hero">Amigos do Bem — Juntos transformamos vidas</h1>
+        <p class="lead">Mobilizamos voluntários, recursos e conhecimento para gerar impacto real em comunidades carentes.</p>
+        <div style="display:flex;gap:12px;margin-top:16px;">
+          <a class="btn primary" href="projetos.html">Conheça nossos projetos</a>
+          <a class="btn" href="cadastro.html">Quero ajudar</a>
+        </div>
+
+        <section style="margin-top:24px;">
+          <h2 class="h-xl">Campanha atual</h2>
+          <div class="card" style="padding:16px;">
+            <p>Campanha: Alimentando o Futuro — Meta: R$ 60.000</p>
+            <progress value="24000" max="60000" style="width:100%;height:16px;border-radius:8px;overflow:hidden;"></progress>
+            <p style="margin-top:8px;">40% arrecadado</p>
+          </div>
+        </section>
+      </section>
+
+      <aside class="col" aria-labelledby="impacto-title">
+        <h2 id="impacto-title" class="h-lg">Nosso impacto</h2>
+        <img src="assets/images/impacto.svg" alt="Impacto Amigos do Bem" style="width:100%;border-radius:12px;">
+        <p style="margin-top:12px;">Milhares de atendimentos e centenas de famílias beneficiadas com programas de educação e saúde.</p>
+      </aside>
+    </div>
+
+    <section class="container" style="margin-top:32px;">
+      <h2 class="h-xl">Projetos em destaque</h2>
+      <div class="projects-grid" id="featured-projects" aria-live="polite" style="margin-top:16px;">
+        <article class="card">
+          <img src="assets/images/projeto-1.svg" alt="Educação para Todos">
+          <div class="card-body">
+            <h3 class="card-title">Educação para Todos</h3>
+            <p class="card-excerpt">Aulas de reforço e oficinas para crianças e jovens.</p>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:12px;">
+              <span class="badge">Educação</span>
+              <a class="btn" href="projetos.html">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/images/projeto-2.svg" alt="Alimentando Vidas">
+          <div class="card-body">
+            <h3 class="card-title">Alimentando Vidas</h3>
+            <p class="card-excerpt">Distribuição de cestas e ações de apoio nutricional.</p>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:12px;">
+              <span class="badge secondary">Saúde</span>
+              <a class="btn" href="projetos.html">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" style="margin-top:48px;">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between">
+        <div>
+          <h3>Contato</h3>
+          <address id="contato">
+            Rua Esperança, 100 — São Paulo - SP<br>
+            <a href="tel:+551199999999">(11) 9 9090-8080</a><br>
+            <a href="mailto:contato@amigosdobem.org">contato@amigosdobem.org</a>
+          </address>
+        </div>
+        <div>
+          <h3>Transparência</h3>
+          <ul>
+            <li><a href="#">Relatórios financeiros</a></li>
+            <li><a href="#">Políticas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top:24px;">© <span id="year"></span> Amigos do Bem — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

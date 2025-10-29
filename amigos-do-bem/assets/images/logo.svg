@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="80" viewBox="0 0 280 80" role="img" aria-label="Amigos do Bem Logo">
+  <rect width="280" height="80" rx="12" fill="#0b5fcc"/>
+  <text x="24" y="48" font-family="Inter, Arial" font-size="22" fill="#fff" font-weight="700">Amigos do Bem</text>
+  <circle cx="240" cy="40" r="18" fill="#ffd54f" />
+</svg>

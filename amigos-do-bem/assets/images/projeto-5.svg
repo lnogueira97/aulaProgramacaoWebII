@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Projeto 5">
+  <rect width="1200" height="800" fill="#eaf4ff"/>
+  <text x="60" y="120" font-family="Inter, Arial" font-size="48" fill="#0b5fcc" font-weight="700">Projeto 5</text>
+  <rect x="60" y="160" width="360" height="220" fill="#ffd54f" opacity="0.6" />
+  <text x="60" y="420" font-family="Inter, Arial" font-size="24" fill="#334155">Imagem ilustrativa do projeto 5</text>
+</svg>
