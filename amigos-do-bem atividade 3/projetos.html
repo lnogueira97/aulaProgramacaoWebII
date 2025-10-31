@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos — Amigos do Bem</title>
+  <meta name="description" content="Conheça os projetos do Amigos do Bem e oportunidades de voluntariado.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="brand"><a href="index.html"><img src="assets/images/logo.svg" alt="Amigos do Bem logo"></a></div>
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="menu-list">☰</button>
+        <ul id="menu-list" class="menu-list" aria-hidden="true">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main" style="padding:32px 0;">
+    <h1 class="h-xl">Projetos Sociais</h1>
+    <p class="lead">Filtre por categoria e descubra oportunidades de voluntariado.</p>
+
+    <section class="filters" aria-label="Filtros de projetos" style="display:flex;gap:12px;align-items:center;margin-top:16px;">
+      <label for="filtro-cat">Categoria</label>
+      <select id="filtro-cat" style="min-width:160px;">
+        <option value="all">Todos</option>
+        <option value="educacao">Educação</option>
+        <option value="saude">Saúde</option>
+        <option value="meioambiente">Meio Ambiente</option>
+      </select>
+
+      <label for="busca">Buscar</label>
+      <input id="busca" type="search" placeholder="Buscar projetos" style="min-width:220px;">
+    </section>
+
+    <section id="projects-list" class="projects-grid" aria-live="polite" style="margin-top:24px;">
+      <!-- Projetos gerados via JS -->
+    </section>
+
+    <section style="margin-top:32px;">
+      <h2 class="h-lg">Como ajudar</h2>
+      <p>Você pode se voluntariar, doar ou compartilhar nossas campanhas. Cada ação conta.</p>
+      <a class="btn primary" href="cadastro.html">Quero ajudar</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Amigos do Bem — Transparência e compromisso.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

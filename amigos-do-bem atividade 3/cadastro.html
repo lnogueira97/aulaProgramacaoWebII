@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — Amigos do Bem</title>
+  <meta name="description" content="Cadastre-se como voluntário ou apoiador do Amigos do Bem.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="brand"><a href="index.html"><img src="assets/images/logo.svg" alt="Amigos do Bem logo"></a></div>
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="menu-list">☰</button>
+        <ul id="menu-list" class="menu-list" aria-hidden="true">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main" style="padding:32px 0;">
+    <h1 class="h-xl">Cadastro</h1>
+    <p class="lead">Preencha os dados para se tornar voluntário ou apoiador.</p>
+
+    <form id="cadastro-form" action="#" method="post" novalidate style="margin-top:16px;display:grid;gap:16px;">
+      <fieldset class="fieldset">
+        <legend>Dados pessoais</legend>
+        <div class="grid-12" style="gap:12px;">
+          <div class="col-span-6">
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" required minlength="3" aria-required="true">
+          </div>
+          <div class="col-span-6">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required aria-required="true">
+          </div>
+          <div class="col-span-4">
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+            <div class="form-error">CPF inválido</div>
+          </div>
+          <div class="col-span-4">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" placeholder="(11) 9xxxx-xxxx" required>
+            <div class="form-error">Telefone inválido</div>
+          </div>
+          <div class="col-span-4">
+            <label for="nascimento">Data de Nascimento</label>
+            <input id="nascimento" name="nascimento" type="date" max="2008-12-31" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Endereço</legend>
+        <div class="grid-12" style="gap:12px;">
+          <div class="col-span-3">
+            <label for="cep">CEP</label>
+            <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000" required>
+            <div class="form-error">CEP inválido</div>
+          </div>
+          <div class="col-span-6">
+            <label for="endereco">Endereço</label>
+            <input id="endereco" name="endereco" type="text" required>
+          </div>
+          <div class="col-span-3">
+            <label for="cidade">Cidade</label>
+            <input id="cidade" name="cidade" type="text" required>
+          </div>
+          <div class="col-span-3">
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecione...</option>
+              <option value="SP">SP</option>
+              <option value="RJ">RJ</option>
+              <option value="MG">MG</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Interesses</legend>
+        <label><input type="checkbox" name="interesse" value="voluntariado"> Voluntariado</label><br>
+        <label><input type="checkbox" name="interesse" value="doacao"> Doação</label><br>
+        </fieldset>
+
+      <div style="display:flex;gap:12px;">
+        <button class="btn primary" type="submit">Enviar Cadastro</button>
+        <button class="btn" type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Amigos do Bem — Obrigado por apoiar nossa causa.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
